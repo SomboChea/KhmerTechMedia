@@ -1,0 +1,18 @@
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/swipeRefresh_health"
+    tools:context="com.sombochea.khmertechmedia.fragments.frm_health_main">
+
+    <!-- A RecyclerView with some commonly used attrib
+    utes -->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_health"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E0E0E0"/>
+
+</android.support.v4.widget.SwipeRefreshLayout>

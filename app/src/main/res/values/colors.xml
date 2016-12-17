@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#d32f2f</color>-->
+    <!--<color name="colorPrimaryDark">#c72c2c</color>-->
+    <color name="colorPrimary">#2196f3</color>
+    <color name="colorPrimaryDark">#3F51B5</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="refresh_progress_1">#2196F3</color>
+    <color name="refresh_progress_2">#F44336</color>
+    <color name="refresh_progress_3">#8BC34A</color>
+
+    <color name="indigo">#3F51B5</color>
+</resources>

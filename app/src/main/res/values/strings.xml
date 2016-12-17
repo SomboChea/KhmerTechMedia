@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Khmer Tech Media</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_home">Home</string>
+    <string name="nav_technews">Technology</string>
+    <string name="nav_kamsan">Kamsan</string>
+    <string name="nav_sports">Sports</string>
+    <string name="nav_healthlife">Health and Life</string>
+    <string name="nav_education">Education</string>
+    <string name="nav_about_us">About Us</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>Home</item>
+        <item>Technology</item>
+        <item>Kamsan</item>
+        <item>Sports</item>
+        <item><![CDATA[Life & Social]]></item>
+        <item>Health</item>
+    </string-array>
+
+    <string name="activity_title_about_us">About Us</string>
+    <string name="activity_title_privacy_policy">Privacy Policy</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="date_post">01-Jan-2016</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_you_tube_api">YouTubeApi</string>
+
+    <string name="error_player">Error player</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="refresh">Refresh</string>
+    <string name="nav_ls"><![CDATA[Life & Social]]></string>
+    <string name="nav_health">Health</string>
+
+
+    <string name="headHTML"><![CDATA[<!DOCTYPE HTML><html><head><meta name="viewport" content="width=device-width,initial-scale=1.0"></head><body>]]></string>
+    <string name="footHTML"><![CDATA[</body></html>]]></string>
+</resources>

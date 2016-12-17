@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_cloud_circle_black_24dp"
+            android:title="@string/nav_home" />
+        <item
+            android:id="@+id/nav_technews"
+            android:icon="@drawable/ic_cloud_circle_black_24dp"
+            android:title="@string/nav_technews" />
+        <item
+            android:id="@+id/nav_kamsan"
+            android:icon="@drawable/ic_cloud_circle_black_24dp"
+            android:title="@string/nav_kamsan" />
+
+        <item
+            android:id="@+id/nav_sports"
+            android:icon="@drawable/ic_cloud_circle_black_24dp"
+            android:title="@string/nav_sports" />
+
+        <item
+            android:id="@+id/nav_ls"
+            android:icon="@drawable/ic_cloud_circle_black_24dp"
+            android:title="@string/nav_ls" />
+        <item
+            android:id="@+id/nav_health"
+            android:icon="@drawable/ic_cloud_circle_black_24dp"
+            android:title="@string/nav_health" />
+    </group>
+
+    <item android:title="Other">
+        <menu>
+            <item
+                android:id="@+id/nav_about_us"
+                android:title="@string/nav_about_us" />
+            <item
+                android:id="@+id/nav_privacy_policy"
+                android:title="@string/privacy_policy" />
+        </menu>
+    </item>
+
+</menu>
