@@ -109,9 +109,9 @@ public class DetailActivity extends AppCompatActivity {
         });
 
         urlParse parse = new urlParse();
-        final String urlBase = parse.distUrl + "/xhtml/index1.html";
+        final String ad_250 = parse.distUrlAds + "250";
 
-        StringRequest wbRequest = new StringRequest(urlBase, new Response.Listener<String>() {
+        StringRequest wbRequest = new StringRequest(ad_250, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
 
@@ -122,7 +122,7 @@ public class DetailActivity extends AppCompatActivity {
             public void onErrorResponse(VolleyError error) {
 //              wb.loadDataWithBaseURL("",htmlData,"text/html","utf-8","");
                 Cache cache = MySingleton.getInstance(getApplicationContext()).getRequestQueue().getCache();
-                Cache.Entry entry = cache.get(urlBase);
+                Cache.Entry entry = cache.get(ad_250);
 
                 //MySingleton.getInstance(context).getRequestQueue().getCache().clear();
                 if(entry != null){

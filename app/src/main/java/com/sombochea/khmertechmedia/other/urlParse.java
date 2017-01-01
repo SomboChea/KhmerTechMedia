@@ -18,8 +18,8 @@ public class urlParse implements Serializable{
     public void uLink(String link){
         String url = "link";
     }
-    public String distUrl = "http://app.khmer-tech.com/";
-    public String distUrlAds = "http://delivery.ads-server.services.khmer-tech.com/ads.sb?ad=";
+    public String distUrl = "https://app.khmer-tech.com/";
+    public String distUrlAds = "https://delivery.ads-server.services.khmer-tech.com/ads.sb?ad=";
 //  public String distUrl = "http://10.0.2.2";
 //  public String distUrl = "http://app.khmer-tech.com/";
 
