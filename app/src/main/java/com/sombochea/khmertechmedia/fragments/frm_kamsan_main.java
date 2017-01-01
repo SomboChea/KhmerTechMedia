@@ -74,7 +74,7 @@ public class frm_kamsan_main extends Fragment {
 
     private void fetchData(){
         urlParse parse = new urlParse();
-        final String url = parse.uLink + "/khmertech/feed.php?cat=kamsan";
+        final String url = parse.distUrl + "feed.sb?cat=kamsan";
         StringRequest stringRequest = new StringRequest(
                 Request.Method.GET,
                 url,

@@ -52,7 +52,7 @@ public class SportsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             sportsListVH.txt_date.setText(dataItem.post_date);
 
 //            urlParse parse = new urlParse();
-//            String url = parse.uLink + "/khmertech/img/" + dataItem.post_feature_img;
+//            String url = parse.distUrl + "/khmertech/img/" + dataItem.post_feature_img;
             Glide.with(mContext)
                     .load(dataItem.post_feature_img)
                     .diskCacheStrategy(DiskCacheStrategy.ALL)

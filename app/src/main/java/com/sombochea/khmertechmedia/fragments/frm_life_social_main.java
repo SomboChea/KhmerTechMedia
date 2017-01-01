@@ -51,7 +51,6 @@ public class frm_life_social_main extends Fragment {
         // Required empty public constructor
     }
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -76,7 +75,7 @@ public class frm_life_social_main extends Fragment {
 
     private void fetchData(){
         urlParse parse = new urlParse();
-        final String url = parse.uLink + "/khmertech/feed.php?cat=lifesocial";
+        final String url = parse.distUrl + "feed.sb?cat=lifesocial";
         StringRequest stringRequest = new StringRequest(
                 Request.Method.GET,
                 url,

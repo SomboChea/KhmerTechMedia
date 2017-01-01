@@ -52,7 +52,6 @@ public class frm_technews_main extends Fragment {
         // Required empty public constructor
     }
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -77,11 +76,10 @@ public class frm_technews_main extends Fragment {
         return view;
     }
 
-
     //Fetching Data from Database
     private void fetchData(){
         urlParse parse = new urlParse();
-        final String url = parse.uLink + "/khmertech/feed.php";
+        final String url = parse.distUrl + "feed.sb?cat=technews";
         StringRequest stringRequest = new StringRequest(
                 Request.Method.GET,
                 url,
@@ -90,7 +88,7 @@ public class frm_technews_main extends Fragment {
                     public void onResponse(String response) {
 
                         initRecyclerView(response);
-                        Toast.makeText(context.getApplicationContext(),"Loaded",Toast.LENGTH_LONG).show();
+                        Toast.makeText(context.getApplicationContext(),"Data was loaded!",Toast.LENGTH_LONG).show();
 
                         if (swipeRefreshLayout.isRefreshing()){
                             swipeRefreshLayout.setRefreshing(false);
@@ -115,7 +113,7 @@ public class frm_technews_main extends Fragment {
                                     .onPositive(new MaterialDialog.SingleButtonCallback() {
                                         @Override
                                         public void onClick(@NonNull MaterialDialog dialog, @NonNull DialogAction which) {
-                                            Toast.makeText(context.getApplicationContext(), "You used cache date!", Toast.LENGTH_LONG).show();
+                                            Toast.makeText(context.getApplicationContext(), "You used cache data!", Toast.LENGTH_LONG).show();
                                         }
                                     })
                                     .negativeText("Exit")
@@ -143,7 +141,7 @@ public class frm_technews_main extends Fragment {
                                 e.printStackTrace();
                             }
                         }else {
-                            Log.d(TAG, "onErrorResponse: RRRRRRRRRR");
+                            Log.d(TAG, "onErrorResponse: Error while loading!");
                             new MaterialDialog.Builder(context)
                                     .title("Somrthing error!")
                                     .content("Please make sure, your connection is available and working correctly.")

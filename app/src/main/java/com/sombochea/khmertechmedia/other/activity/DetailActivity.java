@@ -60,7 +60,7 @@ public class DetailActivity extends AppCompatActivity {
         if (getIntent().getSerializableExtra("items") != null){
             DataItem dataItem = (DataItem) getIntent().getSerializableExtra("items");
 //            urlParse parse = new urlParse();
-//            String url = parse.uLink + "/khmertech/img/" + dataItem.post_feature_img;
+//            String url = parse.distUrl + "/khmertech/img/" + dataItem.post_feature_img;
             Glide.with(this)
                     .load(dataItem.post_feature_img)
                     .diskCacheStrategy(DiskCacheStrategy.ALL)
@@ -109,7 +109,7 @@ public class DetailActivity extends AppCompatActivity {
         });
 
         urlParse parse = new urlParse();
-        final String urlBase = parse.uLink + "/xhtml/index1.html";
+        final String urlBase = parse.distUrl + "/xhtml/index1.html";
 
         StringRequest wbRequest = new StringRequest(urlBase, new Response.Listener<String>() {
             @Override

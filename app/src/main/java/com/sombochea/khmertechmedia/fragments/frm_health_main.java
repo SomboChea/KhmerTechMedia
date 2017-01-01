@@ -74,7 +74,7 @@ public class frm_health_main extends Fragment {
 
     private void fetchData(){
         urlParse parse = new urlParse();
-        final String url = parse.uLink + "/khmertech/feed.php?cat=health";
+        final String url = parse.distUrl + "/khmertech/feed.php?cat=health";
         StringRequest stringRequest = new StringRequest(
                 Request.Method.GET,
                 url,

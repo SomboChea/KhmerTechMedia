@@ -92,7 +92,7 @@ public class frm_home_main extends Fragment {
 //        wb.loadUrl(Url);
 
         urlParse parse = new urlParse();
-        final String urlBase = parse.uLink + "/xhtml/index.html";
+        final String urlBase = parse.distUrlAds + "load_ads.sb?ad=001";
         StringRequest wbRequest = new StringRequest(urlBase, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -117,7 +117,7 @@ public class frm_home_main extends Fragment {
                         e.printStackTrace();
                     }
                 }else {
-                    Log.d(TAG, "onErrorResponse: RRRRRRRRRR");
+                    Log.d(TAG, "onErrorResponse: Error while loading!");
                 }
             }
         });
@@ -129,7 +129,7 @@ public class frm_home_main extends Fragment {
 
     private void fetchData(){
         urlParse parse = new urlParse();
-        final String url = parse.uLink + "/khmertech/feed.php?cat=home";
+        final String url = parse.distUrl + "feed.sb?cat=home";
         StringRequest stringRequest = new StringRequest(
                 Request.Method.GET,
                 url,
@@ -189,7 +189,7 @@ public class frm_home_main extends Fragment {
                                 e.printStackTrace();
                             }
                         }else {
-                            Log.d(TAG, "onErrorResponse: RRRRRRRRRR");
+                            Log.d(TAG, "onErrorResponse: Error while loading!");
                             new MaterialDialog.Builder(context)
                                     .title("Somrthing error!")
                                     .content("Please make sure, your connection is available and working correctly.")
