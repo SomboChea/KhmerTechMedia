@@ -92,8 +92,8 @@ public class frm_home_main extends Fragment {
 //        wb.loadUrl(Url);
 
         urlParse parse = new urlParse();
-        final String urlBase = parse.distUrlAds + "load_ads.sb?ad=001";
-        StringRequest wbRequest = new StringRequest(urlBase, new Response.Listener<String>() {
+        final String ad_300 = parse.distUrlAds + "300";
+        StringRequest wbRequest = new StringRequest(ad_300, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
 
@@ -105,7 +105,7 @@ public class frm_home_main extends Fragment {
 //                String htmlData = "Error!";
 //                wb.loadDataWithBaseURL("",htmlData,"text/html","utf-8","");
                 Cache cache = MySingleton.getInstance(context).getRequestQueue().getCache();
-                Cache.Entry entry = cache.get(urlBase);
+                Cache.Entry entry = cache.get(ad_300);
 
                 //MySingleton.getInstance(context).getRequestQueue().getCache().clear();
                 if(entry != null){
@@ -161,7 +161,7 @@ public class frm_home_main extends Fragment {
                                     .onPositive(new MaterialDialog.SingleButtonCallback() {
                                         @Override
                                         public void onClick(@NonNull MaterialDialog dialog, @NonNull DialogAction which) {
-                                            Toast.makeText(context.getApplicationContext(), "You used cache date!", Toast.LENGTH_LONG).show();
+                                            Toast.makeText(context.getApplicationContext(), "You used cache data!", Toast.LENGTH_LONG).show();
                                         }
                                     })
                                     .negativeText("Exit")
