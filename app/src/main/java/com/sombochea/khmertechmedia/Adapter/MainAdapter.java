@@ -17,6 +17,8 @@ import com.sombochea.khmertechmedia.R;
 import com.sombochea.khmertechmedia.other.DataItem;
 import com.sombochea.khmertechmedia.other.activity.DetailActivity;
 
+import org.w3c.dom.Text;
+
 import java.util.ArrayList;
 
 /**
@@ -35,7 +37,7 @@ public class MainAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     public static class MainItemVH extends RecyclerView.ViewHolder {
         CardView cv_home_main;
         ImageView ivItem;
-        TextView txt_title,txt_desc,txt_cat,txt_date;
+        TextView txt_title,txt_desc,txt_cat,txt_date,txt_author;
         Button readmore, share;
 
         public MainItemVH(View v) {
@@ -46,6 +48,7 @@ public class MainAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             txt_desc = (TextView) v.findViewById(R.id.post_desc);
             txt_cat = (TextView) v.findViewById(R.id.post_cat);
             txt_date = (TextView) v.findViewById(R.id.post_date);
+            txt_author = (TextView) v.findViewById(R.id.post_author);
             readmore = (Button) v.findViewById(R.id.read_more);
             share = (Button) v.findViewById(R.id.share);
         }
@@ -70,9 +73,9 @@ public class MainAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             mainItemVH.txt_desc.setText(dataItem.post_desc);
             mainItemVH.txt_cat.setText(dataItem.post_cat);
             mainItemVH.txt_date.setText(dataItem.post_date);
+            mainItemVH.txt_author.setText(dataItem.post_author);
 
-//            urlParse parse = new urlParse();
-//            String url = parse.distUrl + "/khmertech/img/" + dataItem.post_feature_img;
+
             Glide.with(mContext)
                     .load(dataItem.post_feature_img)
                     .diskCacheStrategy(DiskCacheStrategy.ALL)

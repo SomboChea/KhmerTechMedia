@@ -74,7 +74,7 @@ public class DetailActivity extends AppCompatActivity {
             txt_title.setText(dataItem.post_title);
             desc_full.setText(dataItem.post_desc);
 
-            String headHTML = "<!DOCTYPE HTML><html><head><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" /><link rel=\"stylesheet\" type=\"text/css\" href=\"http://10.0.2.2/pub/css/materialize.min.css\" media=\"screen, projection\" /><link href=\"http://fonts.googleapis.com/icon?family=Material+Icons\" rel=\"stylesheet\"><script type=\"text/javascript\" src=\"http://10.0.2.2/pub/js/jquery-2.1.1.min.js\"></script><script type=\"text/javascript\" src=\"http://10.0.2.2/pub/js/materialize.min.js\"></script></head><body>";
+            String headHTML = "<!DOCTYPE HTML><html><head><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" /><link rel=\"stylesheet\" type=\"text/css\" href=\"https://mobile.app.khmer-tech.com/css/materialize.min.css\" media=\"screen, projection\" /><link href=\"https://fonts.googleapis.com/icon?family=Material+Icons\" rel=\"stylesheet\"><script type=\"text/javascript\" src=\"https://mobile.app.khmer-tech.com/js/jquery-2.1.1.min.js\"></script><script type=\"text/javascript\" src=\"https://mobile.app.khmer-tech.com/js/materialize.min.js\"></script></head><body>";
             String footHTML = "</body></html>";
             String mainDataHTML = headHTML + dataItem.post_content + footHTML;
 
@@ -93,7 +93,7 @@ public class DetailActivity extends AppCompatActivity {
 //            Toast.makeText(getApplicationContext(),mainDataHTML,Toast.LENGTH_LONG).show();
 
         } else {
-            Toast.makeText(getApplicationContext(),"No Data Received",Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(),R.string.not_reveiced,Toast.LENGTH_LONG).show();
         }
         wb.getSettings().setAllowContentAccess(true);
         wb.getSettings().setJavaScriptEnabled(true);

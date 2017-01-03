@@ -34,7 +34,7 @@ public class TechnewsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     public static class TechnewsVH extends RecyclerView.ViewHolder{
         CardView cv_technews;
         ImageView ivPhoto;
-        TextView post_title,post_desc,post_cat,post_date,post_time,post_author,post_link;
+        TextView post_title,post_desc,post_cat,post_date,txt_author;
 
         public TechnewsVH(View v) {
             super(v);
@@ -44,6 +44,7 @@ public class TechnewsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
             post_desc = (TextView) v.findViewById(R.id.post_desc);
             post_cat = (TextView) v.findViewById(R.id.post_cat);
             post_date = (TextView) v.findViewById(R.id.post_date);
+            txt_author = (TextView) v.findViewById(R.id.author);
         }
 
     }
@@ -67,9 +68,8 @@ public class TechnewsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
             technewsVH.post_desc.setText(dataItem.post_desc);
             technewsVH.post_cat.setText(dataItem.post_cat);
             technewsVH.post_date.setText(dataItem.post_date);
+            technewsVH.txt_author.setText(dataItem.post_author);
 
-//            urlParse parse = new urlParse();
-//            String url = parse.distUrl + "/khmertech/img/" + dataItem.post_feature_img;
             Glide.with(mContext)
                     .load(dataItem.post_feature_img)
                     .diskCacheStrategy(DiskCacheStrategy.ALL)

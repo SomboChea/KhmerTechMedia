@@ -48,6 +48,7 @@
                     android:paddingLeft="10dp"
                     android:layout_marginTop="15dp"
                     android:layout_marginLeft="0dp"/>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -87,6 +88,25 @@
                         android:scrollHorizontally="true"
                         android:paddingLeft="10dp"/>
                 </HorizontalScrollView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/post_author"
+                    android:background="@drawable/label_bg"
+                    android:textSize="10dp"
+                    android:textAllCaps="true"
+                    android:text="By SomboChea"
+                    android:textColor="#fff"
+                    android:textStyle="normal"
+                    android:textAlignment="center"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="10dp"
+                    android:layout_alignBottom="@+id/post_date"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
             </RelativeLayout>
 
             <RelativeLayout

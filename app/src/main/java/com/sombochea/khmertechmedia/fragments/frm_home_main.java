@@ -154,24 +154,24 @@ public class frm_home_main extends Fragment {
                         //MySingleton.getInstance(context).getRequestQueue().getCache().clear();
                         if(entry != null){
                             new MaterialDialog.Builder(context)
-                                    .title("Somrthing error!")
-                                    .content("Please make sure, your connection is available and working correctly.")
+                                    .title(R.string.error_title)
+                                    .content(R.string.error_content)
                                     .theme(Theme.DARK)
-                                    .positiveText("Continue")
+                                    .positiveText("បន្តប្រើវា")
                                     .onPositive(new MaterialDialog.SingleButtonCallback() {
                                         @Override
                                         public void onClick(@NonNull MaterialDialog dialog, @NonNull DialogAction which) {
-                                            Toast.makeText(context.getApplicationContext(), "You used cache data!", Toast.LENGTH_LONG).show();
+                                            Toast.makeText(context.getApplicationContext(), R.string.cache_used, Toast.LENGTH_LONG).show();
                                         }
                                     })
-                                    .negativeText("Exit")
+                                    .negativeText("ចាកចេញ")
                                     .onNegative(new MaterialDialog.SingleButtonCallback() {
                                         @Override
                                         public void onClick(@NonNull MaterialDialog dialog, @NonNull DialogAction which) {
                                             System.exit(0);
                                         }
                                     })
-                                    .neutralText("Retry")
+                                    .neutralText("ធ្វើម្ដងទៀត")
                                     .onNeutral(new MaterialDialog.SingleButtonCallback() {
                                         @Override
                                         public void onClick(@NonNull MaterialDialog dialog, @NonNull DialogAction which) {
@@ -191,17 +191,17 @@ public class frm_home_main extends Fragment {
                         }else {
                             Log.d(TAG, "onErrorResponse: Error while loading!");
                             new MaterialDialog.Builder(context)
-                                    .title("Somrthing error!")
-                                    .content("Please make sure, your connection is available and working correctly.")
+                                    .title(R.string.error_title)
+                                    .content(R.string.error_content)
                                     .theme(Theme.DARK)
-                                    .negativeText("Exit")
+                                    .negativeText("ចាកចេញ")
                                     .onNegative(new MaterialDialog.SingleButtonCallback() {
                                         @Override
                                         public void onClick(@NonNull MaterialDialog dialog, @NonNull DialogAction which) {
                                             System.exit(0);
                                         }
                                     })
-                                    .neutralText("Retry")
+                                    .neutralText("ធ្វើម្ដងទៀត")
                                     .onNeutral(new MaterialDialog.SingleButtonCallback() {
                                         @Override
                                         public void onClick(@NonNull MaterialDialog dialog, @NonNull DialogAction which) {

@@ -200,13 +200,13 @@ public class MainActivity extends AppCompatActivity {
                 frm_sports_main sports_main = new frm_sports_main();
                 return sports_main;
             case 4:
-                // health and life fragment
-                frm_health_main health_main = new frm_health_main();
-                return health_main;
-            case 5:
-                // education fragment
+                // life and social fragment
                 frm_life_social_main ls_main = new frm_life_social_main();
                 return ls_main;
+            case 5:
+                // health fragment
+                frm_health_main health_main = new frm_health_main();
+                return health_main;
             default:
                 return new frm_home_main();
         }

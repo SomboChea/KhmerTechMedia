@@ -30,7 +30,7 @@
             android:title="@string/nav_health" />
     </group>
 
-    <item android:title="Other">
+    <item android:title="ផ្សេងៗទៀត">
         <menu>
             <item
                 android:id="@+id/nav_about_us"

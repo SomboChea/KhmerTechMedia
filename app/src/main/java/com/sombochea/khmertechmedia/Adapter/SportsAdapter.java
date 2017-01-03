@@ -50,6 +50,7 @@ public class SportsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             sportsListVH.txt_desc.setText(dataItem.post_desc);
             sportsListVH.txt_cat.setText(dataItem.post_cat);
             sportsListVH.txt_date.setText(dataItem.post_date);
+            sportsListVH.txt_author.setText(dataItem.post_author);
 
 //            urlParse parse = new urlParse();
 //            String url = parse.distUrl + "/khmertech/img/" + dataItem.post_feature_img;
@@ -85,7 +86,7 @@ public class SportsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
     public static class SportsListVH extends RecyclerView.ViewHolder {
         CardView cv_sports;
         private ImageView ivItem;
-        private TextView txt_title,txt_desc,txt_info,txt_cat,txt_date;
+        private TextView txt_title,txt_desc,txt_info,txt_cat,txt_date,txt_author;
 
         public SportsListVH(View v) {
             super(v);
@@ -95,6 +96,7 @@ public class SportsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             txt_desc = (TextView) v.findViewById(R.id.post_desc);
             txt_cat = (TextView) v.findViewById(R.id.post_cat);
             txt_date = (TextView) v.findViewById(R.id.post_date);
+            txt_author = (TextView) v.findViewById(R.id.author);
         }
     }
 }

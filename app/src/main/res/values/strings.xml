@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Khmer Tech Media</string>
+    <string name="app_name">ព័ត៌មាន​​ ខ្មែរធិច</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -7,39 +7,43 @@
     <string name="closeDrawer">close_drawer</string>
 
     <!-- Navigation Drawer menu labels -->
-    <string name="nav_home">Home</string>
-    <string name="nav_technews">Technology</string>
-    <string name="nav_kamsan">Kamsan</string>
-    <string name="nav_sports">Sports</string>
-    <string name="nav_healthlife">Health and Life</string>
-    <string name="nav_education">Education</string>
-    <string name="nav_about_us">About Us</string>
+    <string name="nav_home">ទំព័រដើម</string>
+    <string name="nav_technews">ព័ត៌មានបច្ចេកវិទ្យា</string>
+    <string name="nav_kamsan">ព័ត៌មានកម្សាន្ត</string>
+    <string name="nav_sports">ព័ត៌មានកីឡា</string>
+    <string name="nav_healthlife">ព័ត៌មានសុភាពនិងជីរិត</string>
+    <string name="nav_education">ព័ត៌មានអប់រំ</string>
+    <string name="nav_about_us">អំពីយើង</string>
 
     <!-- Toolbar titles when navigation menu item is selected -->
     <string-array name="nav_item_activity_titles">
-        <item>Home</item>
-        <item>Technology</item>
-        <item>Kamsan</item>
-        <item>Sports</item>
-        <item><![CDATA[Life & Social]]></item>
-        <item>Health</item>
+        <item>ទំព័រដើម</item>
+        <item>ព័ត៌មានបច្ចេកវិទ្យា</item>
+        <item>ព័ត៌មានកម្សាន្ត</item>
+        <item>ព័ត៌មានកីឡា</item>
+        <item><![CDATA[ព័ត៌មានជីរិត&សង្គម]]></item>
+        <item>ព័ត៌មានសុភាព</item>
     </string-array>
 
-    <string name="activity_title_about_us">About Us</string>
-    <string name="activity_title_privacy_policy">Privacy Policy</string>
-    <string name="privacy_policy">Privacy Policy</string>
+    <string name="activity_title_about_us">អំពីយើង</string>
+    <string name="activity_title_privacy_policy">លក្ខខណ្ឌគោលការណ៏</string>
+    <string name="privacy_policy">លក្ខខណ្ឌគោលការណ៏</string>
     <string name="date_post">01-Jan-2016</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="title_activity_you_tube_api">YouTubeApi</string>
 
     <string name="error_player">Error player</string>
-    <string name="title_activity_detail">DetailActivity</string>
-    <string name="refresh">Refresh</string>
-    <string name="nav_ls"><![CDATA[Life & Social]]></string>
-    <string name="nav_health">Health</string>
+    <string name="title_activity_detail">ព័ត៌មានលំអិត</string>
+    <string name="refresh">ធ្វើលើងវិញ</string>
+    <string name="nav_ls"><![CDATA[ព័ត៌មានជីរិត&សង្គម]]></string>
+    <string name="nav_health">ព័ត៌មានសុភាព</string>
 
-
+    <string name="error_title">មានបញ្ហជាមួយអ្វីមួយ?</string>
+    <string name="error_content">សូមមើលអោយច្បាស់ពីការតភ្ជាប់ប្រព័ន្ធរបស់អ្នក, ថាវាគឺដំណើរការបានត្រឹមត្រូវហើយ!</string>
+    <string name="cache_used">អ្នកគឺកំពុងប្រើទិន្នន័យចាស់!</string>
+    <string name="not_reveiced">គ្មានទិន្នន័យត្រូវបានទទូល!</string>
+    <string name="reveiced_data">ព័ត៌មានទាំងអស់ត្រូវបានទទួល!</string>
     <string name="headHTML"><![CDATA[<!DOCTYPE HTML><html><head><meta name="viewport" content="width=device-width,initial-scale=1.0"></head><body>]]></string>
     <string name="footHTML"><![CDATA[</body></html>]]></string>
 </resources>
