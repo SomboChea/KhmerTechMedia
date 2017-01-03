@@ -74,6 +74,7 @@ public class frm_sports_main extends Fragment {
     }
 
     private void fetchData(){
+        swipeRefreshLayout.setRefreshing(true);
         urlParse parse = new urlParse();
         final String url = parse.distUrl + "feed.sb?cat=sport";
         StringRequest stringRequest = new StringRequest(

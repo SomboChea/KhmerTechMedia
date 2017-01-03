@@ -59,6 +59,7 @@ public class frm_home_main extends Fragment {
         context = container.getContext();
         view = inflater.inflate(R.layout.frm_home, container, false);
         swipeRefreshLayout = (SwipeRefreshLayout) view.findViewById(R.id.swipeRefresh);
+
         swipeRefreshLayout.setColorSchemeResources(
                 R.color.refresh_progress_1,
                 R.color.refresh_progress_2,
@@ -128,6 +129,7 @@ public class frm_home_main extends Fragment {
     }
 
     private void fetchData(){
+        swipeRefreshLayout.setRefreshing(true);
         urlParse parse = new urlParse();
         final String url = parse.distUrl + "feed.sb?cat=home";
         StringRequest stringRequest = new StringRequest(
@@ -136,7 +138,6 @@ public class frm_home_main extends Fragment {
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-
                         initRecyclerView(response);
 
                         if (swipeRefreshLayout.isRefreshing()){

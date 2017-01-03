@@ -73,6 +73,7 @@ public class frm_health_main extends Fragment {
     }
 
     private void fetchData(){
+        swipeRefreshLayout.setRefreshing(true);
         urlParse parse = new urlParse();
         final String url = parse.distUrl + "feed.sb?cat=health";
         StringRequest stringRequest = new StringRequest(
