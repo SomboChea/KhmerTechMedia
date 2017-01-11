@@ -94,7 +94,6 @@ public class frm_health_main extends Fragment {
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        //Toast.makeText(getContext(), "Error!", Toast.LENGTH_LONG).show();
                         //Define Cache for use offline
                         Cache cache = MySingleton.getInstance(context).getRequestQueue().getCache();
                         Cache.Entry entry = cache.get(url);
